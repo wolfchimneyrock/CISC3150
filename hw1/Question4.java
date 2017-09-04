@@ -1,3 +1,12 @@
+/********************************************************
+ * Robert Wagner
+ * CISC 3150 HW #1
+ * 2017-09-04
+ *
+ * Question4.java:
+ *   In which a file is read and output
+ *
+ ********************************************************/
 import java.util.Scanner;
 
 public class Question4 {

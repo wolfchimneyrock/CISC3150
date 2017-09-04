@@ -1,3 +1,13 @@
+/********************************************************
+ * Robert Wagner
+ * CISC 3150 HW #1
+ * 2017-09-04
+ *
+ * Question3.java:
+ *   In which a month is named
+ *
+ ********************************************************/
+
 import java.util.Random;
 
 public class Question3 {
