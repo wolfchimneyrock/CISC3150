@@ -23,7 +23,7 @@ public class Question2 {
         while (prompt("Enter Radius: ") &&  s.hasNextDouble()) {
             try {
                 Circle c = Circle.fromCoords(0, 0, s.nextDouble());
-                System.out.printf("Area: %.3f\n", c.area()); 
+                System.out.printf("Area: %.5f\n", c.area()); 
             } catch (IllegalArgumentException exc) {
                 System.out.println(exc.getMessage());
             }

@@ -1,0 +1,44 @@
+See below for multiple runs of Question6,
+trying different cases
+_________________________________________________
+
+Enter circle A [X Y R]: 0 0 1
+Enter circle B [X Y R]: 3 3 1
+Circles A and B do not intersect
+_________________________________________________
+
+Enter circle A [X Y R]: 0 0 100
+Enter circle B [X Y R]: 10 20 30
+Circle A encloses circle B
+_________________________________________________
+
+Enter circle A [X Y R]: 1.5 1.5 0.1
+Enter circle B [X Y R]: 1 2 3
+Circle A is enclosed by circle B
+_________________________________________________
+
+Enter circle A [X Y R]: 10 10 10
+Enter circle B [X Y R]: -5 10 5
+Circles A and B are tangent
+_________________________________________________
+
+Enter circle A [X Y R]: 100 50 75
+Enter circle B [X Y R]: 100 50 75
+Circles A and B are co-incident
+_________________________________________________
+
+Enter circle A [X Y R]: 5 5 10
+Enter circle B [X Y R]: -7.5 10 8
+Circles A and B overlap
+_________________________________________________
+
+Enter circle A [X Y R]: 0 0 1
+Enter circle B [X Y R]: 0 0 0
+Radius must be greater than zero
+_________________________________________________
+
+Enter circle A [X Y R]: 5 10 0.1
+Enter circle B [X Y R]: 3 2 nachoes
+Invalid input, aborting.
+
+

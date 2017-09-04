@@ -1,0 +1,16 @@
+Enter Radius: 1
+Area: 3.14159
+Enter Radius: 2
+Area: 12.56637
+Enter Radius: 0.1
+Area: 0.03142
+Enter Radius: 0.01
+Area: 0.00031
+Enter Radius: 0
+Radius must be greater than zero
+Enter Radius: -1
+Radius must be greater than zero
+Enter Radius: 12
+Area: 452.38934
+Enter Radius: ^D
+

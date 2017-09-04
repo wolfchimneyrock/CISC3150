@@ -22,9 +22,17 @@ public class Question6 {
         
         for (String label : circleLabels) {
             System.out.printf("Enter circle %s [X Y R]: ",label);
-            double x = s.nextDouble();
-            double y = s.nextDouble();
-            double r = s.nextDouble();
+            double x = 0;
+            double y = 0;
+            double r = 0;
+            try {
+                x = s.nextDouble();
+                y = s.nextDouble();
+                r = s.nextDouble();
+            } catch (InputMismatchException exc) {
+                System.out.println("Invalid input, aborting.");
+                System.exit(1);
+            }
             try {
                 circles.add(Circle.fromCoords(x, y, r));
             } catch (IllegalArgumentException exc) {

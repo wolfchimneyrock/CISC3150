@@ -22,7 +22,7 @@ public class Question3 {
     public static void main(String args[]) {
         Random rnd = new Random();
         int month = rnd.nextInt(12);
-        System.out.println(monthNames[month]);
+        System.out.printf("Month #%d is %s\n", month + 1, monthNames[month]);
     }
 }
 

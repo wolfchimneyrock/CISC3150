@@ -1,0 +1,36 @@
+See below for multiple runs of Question5,
+trying different cases
+_________________________________________________
+
+Input three points to form a triangle.
+Enter point A [X Y]: 0 0
+Enter point B [X Y]: 0 1
+Enter point C [X Y]: 1 0
+That is a Valid triangle.
+-------------------------------------------------
+
+Input three points to form a triangle.
+Enter point A [X Y]: 0 1
+Enter point B [X Y]: 0 0
+Enter point C [X Y]: 0 2
+That is NOT a Valid triangle.
+_________________________________________________
+
+Input three points to form a triangle.
+Enter point A [X Y]: -5 11
+Enter point B [X Y]: 1000 -2
+Enter point C [X Y]: 0 0
+That is a Valid triangle.
+_________________________________________________
+
+Input three points to form a triangle.
+Enter point A [X Y]: 0.0000000001 -0.000000001
+Enter point B [X Y]: 0 0
+Enter point C [X Y]: 0.0000000001 0.0000000001
+That is a Valid triangle.
+_________________________________________________
+
+Input three points to form a triangle.
+Enter point A [X Y]: 0 1
+Enter point B [X Y]: nachos
+Invalid input, aborting.

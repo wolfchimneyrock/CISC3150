@@ -21,18 +21,27 @@ public class Question5 {
 
         List<Point> points = new ArrayList<Point>();
         
+        System.out.println("Input three points to form a triangle.");
+
         for (String label : pointLabels) {
+            double x = 0;
+            double y = 0;
             System.out.printf("Enter point %s [X Y]: ",label);
-            double x = s.nextDouble();
-            double y = s.nextDouble();
+            try {
+                x = s.nextDouble();
+                y = s.nextDouble();
+            } catch (NoSuchElementException exc) {
+                System.out.println("Invalid input, aborting.");
+                System.exit(1);
+            }
             points.add(new Point(x, y));
         }
 
         try {
             Triangle t = Triangle.fromPointList(points);
-            System.out.println("Valid triangle");
+            System.out.println("That is a Valid triangle.");
         } catch (IllegalArgumentException exc) {
-            System.out.println("NOT Valid triangle");
+            System.out.println("That is NOT a Valid triangle.");
         }
       
         s.close();
