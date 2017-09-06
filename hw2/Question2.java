@@ -37,19 +37,17 @@ class CalendarMonth {
         int currentDay  = 1;
         String gapFormat = String.format("%%%dd", skip * SPACING);
         this.lines[currentLine] = String.format(gapFormat, currentDay++);
-        while ( (skip + currentDay) % 7 != 2) {
-            this.lines[currentLine] += String.format(FORMAT, currentDay++);
-        }
-        boolean finished = false;
         while (true) {
-            c.set(year, month, currentDay);
-            if (currentDay > 28 && currentDay != c.get(Calendar.DAY_OF_MONTH)) {
-                int lastGap = SPACING * ((44 - currentDay - skip) % 7);
-                if (lastGap > 0) {
-                    String lastFormat = String.format("%%%ds", lastGap);
-                    this.lines[currentLine] += String.format(lastFormat, "");
+            if (currentDay > 28) {
+                c.set(year, month, currentDay);
+                if (currentDay != c.get(Calendar.DAY_OF_MONTH)) {
+                    int lastGap = SPACING * ((44 - currentDay - skip) % 7);
+                    if (lastGap > 0) {
+                        String lastFormat = String.format("%%%ds", lastGap);
+                        this.lines[currentLine] += String.format(lastFormat, "");
+                    }
+                    break;
                 }
-                break;
             }
             if ((skip + currentDay) % 7 == 2) currentLine++;
             this.lines[currentLine] += String.format(FORMAT, currentDay++);
