@@ -43,7 +43,7 @@ class CalendarMonth {
         boolean finished = false;
         while (true) {
             c.set(year, month, currentDay);
-            if (currentDay != c.get(Calendar.DAY_OF_MONTH)) {
+            if (currentDay > 28 && currentDay != c.get(Calendar.DAY_OF_MONTH)) {
                 int lastGap = SPACING * ((44 - currentDay - skip) % 7);
                 if (lastGap > 0) {
                     String lastFormat = String.format("%%%ds", lastGap);
