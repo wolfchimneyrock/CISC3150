@@ -1,5 +1,14 @@
-import java.util.*;
+/********************************************************
+ * Robert Wagner
+ * CISC 3150 HW #2
+ * 2017-09-06
+ *
+ * Question2.java:
+ *   In which a calendar is printed
+ *
+ ********************************************************/
 
+import java.util.*;
 class CalendarMonth {
     static final String DAYS = " Su Mo Tu We Th Fr Sa";
     static final String MONTHS[] = {"January",   "February", "March",    "April",
@@ -7,7 +16,6 @@ class CalendarMonth {
                                     "September", "October",  "November", "December"};
     static final int SPACING = 3;
     static final String FORMAT = "%3d";
-    private int firstDay;
     private String lines[] = {"", "", "", "", "", "", "", "", ""};
 
     public String lineOf(int x) {
@@ -22,15 +30,15 @@ class CalendarMonth {
         int titleGap = (17 - titleLen) / 2;
         String titleFormat = String.format("%%%ds %%-%dd", titleLen + titleGap, 4 + titleGap);
         this.lines[0] = String.format(titleFormat, MONTHS[month], year);
-        lines[1] = DAYS;
+        this.lines[1] = DAYS;
         int skip = c.get(Calendar.DAY_OF_WEEK);
 
         int currentLine = 2;
         int currentDay  = 1;
         String gapFormat = String.format("%%%dd", skip * SPACING);
-        lines[currentLine] = String.format(gapFormat, currentDay++);
+        this.lines[currentLine] = String.format(gapFormat, currentDay++);
         while ( (skip + currentDay) % 7 != 2) {
-            lines[currentLine] += String.format(FORMAT, currentDay++);
+            this.lines[currentLine] += String.format(FORMAT, currentDay++);
         }
         boolean finished = false;
         while (true) {
@@ -39,15 +47,15 @@ class CalendarMonth {
                 int lastGap = SPACING * ((44 - currentDay - skip) % 7);
                 if (lastGap > 0) {
                     String lastFormat = String.format("%%%ds", lastGap);
-                    lines[currentLine] += String.format(lastFormat, "");
+                    this.lines[currentLine] += String.format(lastFormat, "");
                 }
                 break;
             }
             if ((skip + currentDay) % 7 == 2) currentLine++;
-            lines[currentLine] += String.format(FORMAT, currentDay++);
+            this.lines[currentLine] += String.format(FORMAT, currentDay++);
         }
         for (int l = currentLine + 1; l < 8; l++)
-            lines[l] = String.format("%21s", " ");
+            this.lines[l] = String.format("%21s", " ");
     }
 
     public static List<CalendarMonth> ofYear(int year) {
