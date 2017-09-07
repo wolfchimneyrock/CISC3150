@@ -12,8 +12,9 @@ import java.util.*;
 
 class Question5 {
     public static void main(String arg[]) {
-        Scanner s = new Scanner(System.in).useDelimiter(", |,| |\\n|\\t");
+        Scanner s = new Scanner(System.in).useDelimiter(",|\\n");
         List<String> strs = new ArrayList<String>();
+        System.out.print("Enter String, ^D to finish: ");
         while (s.hasNext()) {
             strs.add(s.next());
         }

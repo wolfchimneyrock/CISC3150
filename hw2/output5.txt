@@ -1,0 +1,7 @@
+Enter String, ^D to finish: once,twice,three,times,a,lady
+once
+twice
+three
+times
+a
+lady

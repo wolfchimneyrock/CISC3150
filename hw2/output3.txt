@@ -1,0 +1,14 @@
+Multiple runs of Question3 to test
+--------------------------------------------------------
+Enter string: coriander
+'coriander' is NOT a palindrome.
+--------------------------------------------------------
+Enter string: dammit i'm mad
+'dammit i'm mad' is a palindrome.
+--------------------------------------------------------
+Enter string: Evil is a deed as I live.
+'Evil is a deed as I live.' is a palindrome.
+--------------------------------------------------------
+Enter string: aaabaa
+'aaabaa' is NOT a palindrome.
+

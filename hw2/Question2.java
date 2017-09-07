@@ -38,6 +38,11 @@ class CalendarMonth {
         String gapFormat = String.format("%%%dd", skip * SPACING);
         this.lines[currentLine] = String.format(gapFormat, currentDay++);
         while (true) {
+            // add transition from Julian to Gregorian october gap
+            if (year == 1582 && month == Calendar.OCTOBER && currentDay == 5) {
+                currentDay = 15;
+                skip = Calendar.FRIDAY;
+            }
             if (currentDay > 28) {
                 c.set(year, month, currentDay);
                 if (currentDay != c.get(Calendar.DAY_OF_MONTH)) {
