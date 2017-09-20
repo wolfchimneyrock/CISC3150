@@ -1,0 +1,30 @@
+MySring.valueOf(-2147483648) = '-2147483648'
+MySring.valueOf(-999) = '-999'
+MySring.valueOf(-1) = '1'
+MySring.valueOf(0) = '0'
+MySring.valueOf(10) = '0'
+MySring.valueOf(1000) = '000'
+MySring.valueOf(9999) = '9999'
+MySring.valueOf(2147483647) = '2147483647'
+zero_str = '0'
+other_str = '0'
+zero_str.length() = '1'
+zero_str.equals(other_zero) = true
+zero_str.equals(null) = false
+zero_str.equals(0) = false
+zero_str.equals('0') = false
+zero_str.toString().equals('0') = true
+Attempting to mutate zero_str...
+zero_str = '0'
+empty_str = ''
+empty_str.length() = '0'
+empty_str.toString().equals('0') = false
+proper_str = 'Proper Case'
+proper_str.length() = '11'
+proper_str.toLowerCase() = 'proper case'
+proper_str.toUpperCase() = 'PROPER CASE'
+proper_str.toLowerCase().equals(proper_str.toUpperCase().toLowerCase()) == true
+case_str = proper_str.substring(7,10) == 'Case'
+case_str.toString().equals('Case') = true
+case_str.toLowerCase().toString().equals('Case') = false
+All tests pass.
