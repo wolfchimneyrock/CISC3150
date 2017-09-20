@@ -1,3 +1,13 @@
+/********************************************************
+ * Robert Wagner
+ * CISC 3150 HW #3
+ * 2017-09-20
+ *
+ * MyString.java:
+ *   In which a string is born
+ *
+ ********************************************************/
+
 public class MyString {
     private char[] data;
 
@@ -40,7 +50,6 @@ public class MyString {
                 result[i] -= 'a' - 'A';
         }
         return new MyString(result);   
-
     }
 
     public boolean equals(Object s) {
@@ -72,7 +81,6 @@ public class MyString {
             return new MyString(data);
         }
         int length; 
-        
         if (value < 0)
             length = 1 + (int)Math.ceil(Math.log10(-1L * value));
         else
@@ -85,5 +93,4 @@ public class MyString {
         }
         return new MyString(result);
     }
-    
 }
