@@ -82,9 +82,9 @@ public class MyString {
         }
         int length; 
         if (value < 0)
-            length = 1 + (int)Math.ceil(Math.log10(-1L * value));
+            length = 1 + (int)Math.ceil(Math.log10(-1L * value + 1));
         else
-            length = (int)Math.ceil(Math.log10(value));
+            length = (int)Math.ceil(Math.log10(1L + value));
         char[] result = new char[length];
         result[0] = '-';
         while (length > 0 && value != 0) {
