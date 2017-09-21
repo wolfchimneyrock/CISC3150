@@ -1,0 +1,3 @@
+Using 2 threads to search 2 states.
+0 solutions found.
+Took 5ms

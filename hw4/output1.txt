@@ -1,0 +1,5 @@
+Using 1 threads to search 1 states.
+ Q
+
+1 solutions found.
+Took 5ms

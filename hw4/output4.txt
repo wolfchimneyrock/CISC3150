@@ -1,0 +1,13 @@
+Using 4 threads to search 24 states.
+ . . Q .
+ Q . . .
+ . . . Q
+ . Q . .
+
+ . Q . .
+ . . . Q
+ Q . . .
+ . . Q .
+
+2 solutions found.
+Took 8ms
