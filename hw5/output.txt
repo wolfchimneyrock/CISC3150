@@ -1,0 +1,5 @@
+Using 4 threads to approximate pi with 4000000000 trials.
+PI    is approx 3.141582948000000000
+error is approx 0.000009705589793185
+Took 19889ms
+
