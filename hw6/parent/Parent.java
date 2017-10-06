@@ -3,19 +3,21 @@
  * CISC 3150 HW #6
  * 2017-10-06
  *
- * Child.java:
+ * Parent.java:
  *   In which an inherited protected member is accessed
  *
  ********************************************************/
-import parent.*;
-public class Child extends Parent {
-    public Child(int y) {
-        this.x = y;
+package parent;
+
+public class Parent {
+    protected int x;
+
+    public Parent(int x) {
+        this.x = x;
     }
 
-    public static void main(String[] args) {
-        Child c = new Child(10);
-        System.out.println(c.x);
+    public Parent() {
+        this.x = 0;
     }
 }
 
