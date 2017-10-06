@@ -1,0 +1,18 @@
+a.
+Woof, woof, woof!
+b.
+I'm a cat, go away!
+c.
+*** Compile error: Object does not have call() method
+d.
+Pet@15db9742 (i.e. output of Object class toString())
+e.
+woof!
+f.
+Come here, kitty? ... Don't waste my time.
+g.
+*** Compile error: Cat does not have a call(int) overloaded method
+h.
+four
+i.
+*** Compile error: Pet does not have a call(int) method
