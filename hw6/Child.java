@@ -1,3 +1,13 @@
+/********************************************************
+ * Robert Wagner
+ * CISC 3150 HW #6
+ * 2017-10-06
+ *
+ * Child.java:
+ *   In which an inherited protected member is accessed
+ *
+ ********************************************************/
+
 public class Child extends Parent {
     public Child(int y) {
         this.x = y;

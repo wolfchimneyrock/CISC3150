@@ -1,3 +1,13 @@
+/********************************************************
+ * Robert Wagner
+ * CISC 3150 HW #6
+ * 2017-10-06
+ *
+ * Parent.java:
+ *   In which an inherited protected member is accessed
+ *
+ ********************************************************/
+
 public class Parent {
     protected int x;
 
