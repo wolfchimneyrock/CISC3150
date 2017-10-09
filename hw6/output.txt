@@ -1,18 +1,26 @@
-a.
+a. Dog::call(int) is called (item E)
 Woof, woof, woof!
-b.
+
+b. Cat::toString() is called (item G) 
 I'm a cat, go away!
-c.
+
+c. Object::call() does not exist at compile time
 *** Compile error: Object does not have call() method
-d.
+
+d. Object::toString() is called since Pet does not override it
 Pet@15db9742 (i.e. output of Object class toString())
-e.
+
+e. Dog::call() is called (Item C)
 woof!
-f.
+
+f. Cat::toString(String) is called (Item H)
 Come here, kitty? ... Don't waste my time.
-g.
+
+g. Cat::call(int), Pet::call(int), Object::call(int) do not exist
 *** Compile error: Cat does not have a call(int) overloaded method
-h.
+
+h. Pet::feet() is called since Dog does not override it
 four
-i.
+
+i. Pet::call(int), Object::call(int) do not exist
 *** Compile error: Pet does not have a call(int) method
