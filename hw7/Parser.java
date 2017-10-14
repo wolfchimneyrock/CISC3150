@@ -19,7 +19,7 @@ public class Parser {
         if (t.isOperator()) {
             while (!opStack.empty() && 
                    (opStack.peek()).precedence() >= t.precedence() &&
-                   (opStack.peek()).isLeftAssociative() 
+                   t.isLeftAssociative() 
                    ) {
                 output.add(opStack.pop());
             }
@@ -65,7 +65,7 @@ public class Parser {
                     s.push(t.evaluate(a, b));
                 }
                 catch (Exception e) {
-                    throw new LookAtMrAlgebraOverHereException();
+                    throw new UserIsADumbassException();
                 }
             }
         }

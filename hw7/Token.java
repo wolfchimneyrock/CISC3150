@@ -127,7 +127,7 @@ class ExponentOperator implements Token {
     @Override
     public double evaluate(double a, double b) { return Math.pow(a, b); }
     @Override
-    public int precedence() { return 4; }
+    public int precedence() { return 7; }
     @Override
     public boolean isLeftAssociative() { return false; }
     @Override
@@ -157,9 +157,7 @@ class SineOperator implements Token {
     @Override
     public boolean isUnary() { return true; }
     @Override
-    public boolean isLeftAssociative() { return false; }
-    @Override
-    public int precedence() { return 4; }
+    public int precedence() { return 6; }
     @Override
     public String toString() { return "sin"; }
 }
@@ -170,9 +168,7 @@ class CosineOperator implements Token {
     @Override
     public boolean isUnary() { return true; }
     @Override
-    public boolean isLeftAssociative() { return false; }
-    @Override
-    public int precedence() { return 4; }
+    public int precedence() { return 6; }
     @Override
     public String toString() { return "cos"; }
 }
@@ -183,9 +179,7 @@ class TangentOperator implements Token {
     @Override
     public boolean isUnary() { return true; }
     @Override
-    public boolean isLeftAssociative() { return false; }
-    @Override
-    public int precedence() { return 4; }
+    public int precedence() { return 6; }
     @Override
     public String toString() { return "tan"; }
 }
@@ -196,9 +190,7 @@ class LogOperator implements Token {
     @Override
     public boolean isUnary() { return true; }
     @Override
-    public boolean isLeftAssociative() { return false; }
-    @Override
-    public int precedence() { return 4; }
+    public int precedence() { return 6; }
     @Override
     public String toString() { return "log"; }
 }
