@@ -56,7 +56,11 @@ public class Parser {
                 s.push(t.value());
             else {
                 try {
-                    double b = s.pop();
+                    double b;
+                    if (t.isUnary())
+                       b = 0;
+                    else
+                       b = s.pop();
                     double a = s.pop();
                     s.push(t.evaluate(a, b));
                 }
@@ -81,7 +85,8 @@ public class Parser {
                 Token t = Token.fromString(args[i], expectNumber);
                 
                 // brackets don't trigger a change in expectation
-                if (t.isOperand() || t.isOperator())
+                // neither do unary operators
+                if ((t.isOperand() || t.isOperator()) && !t.isUnary())
                    expectNumber = t.isOperator(); 
 
                 p.add(t);
