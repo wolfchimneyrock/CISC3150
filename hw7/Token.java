@@ -79,63 +79,43 @@ public interface Token {
 }
 
 class AddOperator implements Token {
-    @Override
     public double evaluate(double a, double b) { return a + b; }
-    @Override
-    public int precedence() { return 2; }
-    @Override
-    public String toString() { return "+"; }
+    public int    precedence()                 { return 2;     }
+    public String toString()                   { return "+";   }
 }
 
 class SubtractOperator implements Token {
-    @Override
     public double evaluate(double a, double b) { return a - b; }
-    @Override
-    public int precedence() { return 2; }
-    @Override
-    public String toString() { return "-"; }
+    public int    precedence()                 { return 2;     }
+    public String toString()                   { return "-";   }
 }
 
 class MultiplyOperator implements Token {
-    @Override
     public double evaluate(double a, double b) { return a * b; }
-    @Override
-    public int precedence() { return 3; }
-    @Override
-    public String toString() { return "*"; }
+    public int    precedence()                 { return 3;     }
+    public String toString()                   { return "*";   }
 }
 
 class DivideOperator implements Token {
-    @Override
     public double evaluate(double a, double b) { return a / b; }
-    @Override
-    public int precedence() { return 3; }
-    @Override
-    public String toString() { return "/"; }
+    public int    precedence()                 { return 3;     }
+    public String toString()                   { return "/";   }
 }
 
 class ModuloOperator implements Token {
-    @Override
     public double evaluate(double a, double b) { return a % b; }
-    @Override
-    public int precedence() { return 3; }
-    @Override
-    public String toString() { return "%"; }
+    public int    precedence()                 { return 3;     }
+    public String toString()                   { return "%";   }
 }
 
 class ExponentOperator implements Token {
-    @Override
-    public double evaluate(double a, double b) { return Math.pow(a, b); }
-    @Override
-    public int precedence() { return 7; }
-    @Override
-    public boolean isLeftAssociative() { return false; }
-    @Override
-    public String toString() { return "^"; }
+    public double  evaluate(double a, double b) { return Math.pow(a, b); }
+    public int     precedence()                 { return 7;              }
+    public boolean isLeftAssociative()          { return false;          }
+    public String  toString()                   { return "^";            }
 }
 
 class FactorialOperator implements Token {
-    @Override
     public double evaluate(double a, double b) { 
         long i = (long) Math.round(a);
         long result = 1;
@@ -143,87 +123,57 @@ class FactorialOperator implements Token {
             result *= j;
         return (double)result;
     }
-    @Override
-    public boolean isUnary() { return true; }
-    @Override
-    public int precedence() { return 4; }
-    @Override
-    public String toString() { return "!"; }
+    public boolean isUnary()    { return true; }
+    public int     precedence() { return 4;    }
+    public String  toString()   { return "!";  }
 } 
 
 class SineOperator implements Token {
-    @Override
-    public double evaluate(double a, double b) { return Math.sin(a); }
-    @Override
-    public boolean isUnary() { return true; }
-    @Override
-    public int precedence() { return 6; }
-    @Override
-    public String toString() { return "sin"; }
+    public double  evaluate(double a, double b) { return Math.sin(a); }
+    public boolean isUnary()                    { return true;        }
+    public int     precedence()                 { return 6;           }
+    public String  toString()                   { return "sin";       }
 }
 
 class CosineOperator implements Token {
-    @Override
-    public double evaluate(double a, double b) { return Math.cos(a); }
-    @Override
-    public boolean isUnary() { return true; }
-    @Override
-    public int precedence() { return 6; }
-    @Override
-    public String toString() { return "cos"; }
+    public double  evaluate(double a, double b) { return Math.cos(a); }
+    public boolean isUnary()                    { return true;        }
+    public int     precedence()                 { return 6;           }
+    public String  toString()                   { return "cos";       }
 }
 
 class TangentOperator implements Token {
-    @Override
-    public double evaluate(double a, double b) { return Math.tan(a); }
-    @Override
-    public boolean isUnary() { return true; }
-    @Override
-    public int precedence() { return 6; }
-    @Override
-    public String toString() { return "tan"; }
+    public double  evaluate(double a, double b) { return Math.tan(a); }
+    public boolean isUnary()                    { return true;        }
+    public int     precedence()                 { return 6;           }
+    public String  toString()                   { return "tan";       }
 }
 
 class LogOperator implements Token {
-    @Override
-    public double evaluate(double a, double b) { return Math.log(a); }
-    @Override
-    public boolean isUnary() { return true; }
-    @Override
-    public int precedence() { return 6; }
-    @Override
-    public String toString() { return "log"; }
+    public double  evaluate(double a, double b) { return Math.log(a); }
+    public boolean isUnary()                    { return true;        }
+    public int     precedence()                 { return 6;           }
+    public String  toString()                   { return "log";       }
 }
 
 class LeftBracket implements Token {
-    @Override
-    public boolean isLeftBracket() { return true; }
-    @Override
-    public boolean isOperator()     { return false; }
-    @Override
-    public int precedence()     { return 1; }
-    @Override
-    public String toString() { return "("; }
+    public boolean isLeftBracket() { return true;  }
+    public boolean isOperator()    { return false; }
+    public int     precedence()    { return 1;     }
+    public String  toString()      { return "(";   }
 }
 
 class RightBracket implements Token {
-    @Override
-    public boolean isRightBracket() { return true; }
-    @Override
+    public boolean isRightBracket() { return true;  }
     public boolean isOperator()     { return false; }
-    @Override
-    public String toString() { return ")"; }
+    public String  toString()       { return ")";   }
 }
 
 class Operand implements Token {
     private double val;
-    public Operand(double val) { this.val = val; }
-    @Override
-    public boolean isOperator() { return false; }
-    @Override
-    public boolean isOperand()  { return true;  }
-    @Override
-    public double value() { return this.val; }
-    @Override
-    public String toString() { return Double.toString(this.val); }
+    public Operand(double val)  { this.val = val;                   }
+    public boolean isOperator() { return false;                     }
+    public boolean isOperand()  { return true;                      }
+    public double  value()      { return this.val;                  }
+    public String  toString()   { return Double.toString(this.val); }
 }
