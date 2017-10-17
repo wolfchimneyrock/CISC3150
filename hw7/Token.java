@@ -1,3 +1,13 @@
+/********************************************************
+ * Robert Wagner
+ * CISC 3150 HW #7
+ * 2017-10-17
+ *
+ * Token.java:
+ *   In which algebraic operations are defined
+ *   functions come first
+ *
+ ********************************************************/
 
 public interface Token {
     default public double  evaluate(double a, double b) {
@@ -28,17 +38,19 @@ public interface Token {
                         break;
             case "}":   result = new RightBracket();
                         break;
-            case "sin": result = new SineOperator();
+            case "sin": result = new SineFunction();
                         break;
-            case "cos": result = new CosineOperator();
+            case "cos": result = new CosineFunction();
                         break;
-            case "tan": result = new TangentOperator();
+            case "tan": result = new TangentFunction();
                         break;
             case "pi":  result = new Operand(Math.PI);
                         break;
             case "e":   result = new Operand(Math.E);
                         break;
-            case "log": result = new LogOperator();
+            case "log": result = new LogFunction();
+                        break;
+            case "sqrt":result = new RootFunction();
                         break;
 
             default: 
@@ -128,32 +140,39 @@ class FactorialOperator implements Token {
     public String  toString()   { return "!";  }
 } 
 
-class SineOperator implements Token {
+class SineFunction implements Token {
     public double  evaluate(double a, double b) { return Math.sin(a); }
     public boolean isUnary()                    { return true;        }
     public int     precedence()                 { return 6;           }
     public String  toString()                   { return "sin";       }
 }
 
-class CosineOperator implements Token {
+class CosineFunction implements Token {
     public double  evaluate(double a, double b) { return Math.cos(a); }
     public boolean isUnary()                    { return true;        }
     public int     precedence()                 { return 6;           }
     public String  toString()                   { return "cos";       }
 }
 
-class TangentOperator implements Token {
+class TangentFunction implements Token {
     public double  evaluate(double a, double b) { return Math.tan(a); }
     public boolean isUnary()                    { return true;        }
     public int     precedence()                 { return 6;           }
     public String  toString()                   { return "tan";       }
 }
 
-class LogOperator implements Token {
+class LogFunction implements Token {
     public double  evaluate(double a, double b) { return Math.log(a); }
     public boolean isUnary()                    { return true;        }
     public int     precedence()                 { return 6;           }
     public String  toString()                   { return "log";       }
+}
+
+class RootFunction implements Token {
+    public double  evaluate(double a, double b) { return Math.sqrt(a);}
+    public boolean isUnary()                    { return true;        }
+    public int     precedence()                 { return 6;           }
+    public String  toString()                   { return "sqrt";      }
 }
 
 class LeftBracket implements Token {

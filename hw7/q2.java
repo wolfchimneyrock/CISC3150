@@ -1,3 +1,14 @@
+/********************************************************
+ * Robert Wagner
+ * CISC 3150 HW #7
+ * 2017-10-17
+ *
+ * q2.java:
+ *   In which an object is serialized, written then read
+ *   And a static variable stays home in the class def'n
+ *
+ ********************************************************/
+
 import java.io.*;
 
 public class q2 implements Serializable {

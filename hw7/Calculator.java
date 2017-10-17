@@ -1,9 +1,9 @@
 import java.util.*;
-public class Parser {
+public class Calculator {
     protected List<Token> output;
     protected Stack<Token> opStack;
 
-    public Parser() {
+    public Calculator() {
         output  = new ArrayList<Token>();
         opStack = new Stack<Token>();
     }
@@ -79,7 +79,7 @@ public class Parser {
 
     public static void main(String[] args) {
         boolean expectNumber = true;
-        Parser p = new Parser();
+        Calculator p = new Calculator();
         for (int i = 0; i < args.length; i++) {
             try {
                 Token t = Token.fromString(args[i], expectNumber);
