@@ -1,0 +1,9 @@
+Original:
+s = 10
+x = 50
+Modified:
+s = 20
+x = 30
+Reloaded:
+s = 20
+x = 50
