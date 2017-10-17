@@ -1,3 +1,15 @@
+/********************************************************
+ * Robert Wagner
+ * CISC 3150 HW #7
+ * 2017-10-17
+ *
+ * Calculator.java:
+ *   In which infix operations are evaluated
+ *   by first shunting to postfix with a stack
+ *   and then evaluating, again with a stack
+ *
+ ********************************************************/
+
 import java.util.*;
 public class Calculator {
     protected List<Token> output;

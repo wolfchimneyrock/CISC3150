@@ -5,7 +5,9 @@
  *
  * Token.java:
  *   In which algebraic operations are defined
- *   functions come first
+ *   functions come first { brackets are a function too }
+ *   operands next
+ *   operators last
  *
  ********************************************************/
 
@@ -30,8 +32,11 @@ public interface Token {
     default public boolean isUnary()           { return false; }
 
     public static Token fromString(String s, boolean expectNum) {
+        // static factory of operators
+        // using { and } for brackets since Bash shell interprets ( and )
+        // also using x instead of * for multiplication for the same reason
         // we need expectNum since a number might be negative and start with '-'
-        // also a bracket can happen at any time, whether we expect a number or operator
+        // also a bracket or function can happen at any time, whether we expect a number or operator
         Token result = null;
         switch(s) {
             case "{":   result = new LeftBracket();
@@ -44,13 +49,14 @@ public interface Token {
                         break;
             case "tan": result = new TangentFunction();
                         break;
-            case "pi":  result = new Operand(Math.PI);
-                        break;
-            case "e":   result = new Operand(Math.E);
-                        break;
             case "log": result = new LogFunction();
                         break;
             case "sqrt":result = new RootFunction();
+                        break;
+            
+            case "pi":  result = new Operand(Math.PI);
+                        break;
+            case "e":   result = new Operand(Math.E);
                         break;
 
             default: 
