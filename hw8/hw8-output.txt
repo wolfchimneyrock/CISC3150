@@ -1,0 +1,127 @@
+CISC3150
++-- rjw-cisc3150-hw6.zip
++-- rjw-cisc3150-hw3.zip
++-- stream.java
++-- hw4
+|   +-- PermIterator.class
+|   +-- output16.txt
+|   +-- NQueens.class
+|   +-- NQueens.java
+|   +-- output8.txt
+|   +-- output15.txt
+|   +-- QThread.class
+|   +-- output1.txt
+|   +-- output4.txt
+|   +-- QTask.class
+|   +-- output5.txt
+|   +-- output2.txt
+|   +-- output7.txt
+|   +-- output6.txt
+|   +-- output3.txt
++-- hw7
+|   +-- SubtractOperator.class
+|   +-- LogFunction.class
+|   +-- MultiplyOperator.class
+|   +-- LookAtMrAlgebraOverHereException.java
+|   +-- Token.java
+|   +-- TangentFunction.class
+|   +-- IllegalOperationException.class
+|   +-- RightBracket.class
+|   +-- ModuloOperator.class
+|   +-- UserIsADumbassException.class
+|   +-- RootFunction.class
+|   +-- SineFunction.class
+|   +-- output1.txt
+|   +-- Calculator.class
+|   +-- UserIsADumbassException.java
+|   +-- DivideOperator.class
+|   +-- IllegalOperationException.java
+|   +-- AddOperator.class
+|   +-- ExponentOperator.class
+|   +-- LookAtMrAlgebraOverHereException.class
+|   +-- q2.obj
+|   +-- output2.txt
+|   +-- Token.class
+|   +-- Calculator.java
+|   +-- Operand.class
+|   +-- CosineFunction.class
+|   +-- LeftBracket.class
+|   +-- q2.java
+|   +-- FactorialOperator.class
++-- shifterror.class
++-- README.md
++-- rjw-cisc3150-hw1.zip
++-- shifterror.java
++-- StreamTest.class
++-- rjw-cisc3150-hw2.zip
++-- hw5
+|   +-- MCPi.java
+|   +-- MCPi.class
+|   +-- PiTask.class
+|   +-- output.txt
++-- rjw-cisc3150-hw7.zip
++-- hw2
+|   +-- Question2.class
+|   +-- Question3.java
+|   +-- CalendarMonth.class
+|   +-- Question2.java
+|   +-- output1.txt
+|   +-- output4.txt
+|   +-- output5.txt
+|   +-- Question6.java
+|   +-- Question1.class
+|   +-- output2.txt
+|   +-- Question6.class
+|   +-- Question5.class
+|   +-- Question3.class
+|   +-- output6.txt
+|   +-- Question4.class
+|   +-- output3.txt
+|   +-- Question1.java
+|   +-- Question5.java
+|   +-- Question4.java
++-- hw3
+|   +-- MyString.java
+|   +-- MyStringTest.class
+|   +-- MyStringTest.output
+|   +-- MyString.class
+|   +-- MyStringTest.java
++-- rjw-cisc3150-hw5.zip
++-- hw1
+|   +-- shapes
+|   |   +-- Circle.java
+|   |   +-- Triangle.java
+|   |   +-- Intersection.java
+|   |   +-- Point.java
+|   +-- Question3.java
+|   +-- Question2.java
+|   +-- input4.txt
+|   +-- output4.txt
+|   +-- output5.txt
+|   +-- Question6.java
+|   +-- output2.txt
+|   +-- output6.txt
+|   +-- output3.txt
+|   +-- Question5.java
+|   +-- Question4.java
++-- hw8
+|   +-- Tree.java
+|   +-- Tree.class
+|   +-- hw8-output.txt
++-- rjw-cisc-3150-hw4.zip
++-- hw6
+|   +-- Cat.java
+|   +-- parent
+|   |   +-- Parent.class
+|   |   +-- Parent.java
+|   +-- Cat.class
+|   +-- Class 12_ Homework.pdf
+|   +-- Pet.class
+|   +-- q2.class
+|   +-- Dog.class
+|   +-- Pet.java
+|   +-- Child.java
+|   +-- output.txt
+|   +-- Dog.java
+|   +-- q2.java
+|   +-- Child.class
