@@ -1,0 +1,8 @@
+Choose a plugin to run:
+[ 0] Paul
+[ 1] John
+>> 0
+
+plugin.Paul.whoSaysHello(): She's so heavy.
+plugin.Paul.whoSaysBye():   Take these broken wings and learn to fly.
+
